@@ -25,6 +25,11 @@
 a {
     text-decoration: none;
     color: $black-color;
+    transition: .2s;
+}
+
+a:hover {
+    color: $primary-color;
 }
 
 header {
@@ -91,15 +96,6 @@ header {
                 padding: 1.4rem;
                 border: 1px solid #fff;
                 transition: .2s;
-            }
-
-            a:first-child {
-                border-top-left-radius: 15px;
-                border-top-right-radius: 15px;
-            }
-
-            a:hover {
-                border-color: $black-color;
             }
             
         }
