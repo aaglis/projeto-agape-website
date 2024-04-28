@@ -1,10 +1,11 @@
 import { NgOptimizedImage, isPlatformBrowser } from '@angular/common';
 import { Component, ElementRef, Inject, PLATFORM_ID, ViewChild, AfterViewInit} from '@angular/core';
+import { RedirectButtonComponent } from '../../shared/components/redirect-button/redirect-button.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgOptimizedImage],
+  imports: [NgOptimizedImage, RedirectButtonComponent],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
@@ -19,7 +20,6 @@ export class HeaderComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     if (isPlatformBrowser(this.platformId)) {
-      // Apenas executa este código se estiver no lado do cliente
       this.toggleBtn.nativeElement.addEventListener('click', (event: Event) => {
         event.stopPropagation();
 

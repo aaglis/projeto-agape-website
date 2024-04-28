@@ -1,0 +1,254 @@
+@import '../../../variables.scss';
+
+.inicio {
+    display: flex;
+    padding: 4rem 7rem;
+    transition: .3s;
+
+    .left-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .text-section {
+            .title {
+                width: max-content;
+                h1 {
+                    font-size: 4.5rem;
+                    line-height: 5.5rem;
+                    span {
+                        color: $primary-color;
+                    }
+                }
+            }
+            .subtext {
+                padding: 2rem 0;
+                width: 85%;
+                p {
+                    line-height: 1.8rem;
+                    font-size: 1.25rem;
+                }
+            }
+        }
+
+        .redirection {
+            width: 100%;
+            padding-top: 3rem;
+            transition: .3s;
+            
+            ::ng-deep app-redirect-button a{
+                color: $white-color;
+                font-weight: bold;
+                text-decoration: none;
+                
+                width: 250px;
+                height: 60px;
+                border-radius: 10px;
+                opacity: 0.9;
+                border: 2px solid $primary-color;
+                background-color: $primary-color;
+            }
+            
+            ::ng-deep app-redirect-button a:hover {
+                background-color: #fff !important;
+                color: $black-color !important;
+                transform: scale(1.02);
+            }
+        }
+    }
+
+    .right-section {
+        .background {
+            display: flex;
+            justify-content: center;
+
+            transition: .2s;
+            .img {
+                display: flex;
+                text-align: center;
+
+                padding: .4rem;
+                border-radius: 5px;
+                background: linear-gradient($secondary-color 50%, $white-color 50%);
+                img {
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+.inicio .left-wrapper,
+.inicio .right-section {
+    width: 50%;
+    transition: .5s;
+}
+
+@media screen and (max-width: 1620px) {
+    .inicio .right-section .background  {
+        justify-content: end;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .inicio .left-wrapper,
+    .inicio .right-section {
+        width: auto;
+    }
+
+    .inicio {
+        .left-wrapper .text-section {
+            .title h1 {
+                font-size: 4rem !important;
+                line-height: 4.5rem !important;
+            }
+            .subtext {
+                width: 80%;
+            }
+        }
+        .right-section .background .img img {
+            width: 450px;
+            height: 580px;
+        }
+    }
+}
+
+@media screen and (max-width: 1340px) {
+    .inicio {
+        padding: 4rem 2rem;
+        .left-wrapper {
+            .text-section .subtext {
+                width: 75%;
+            }
+            .redirection {
+                padding-top: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .inicio {
+        .left-wrapper .text-section {
+            .title h1 {
+                font-size: 3.3rem !important;
+                line-height: 3.7rem !important;
+            }
+
+            .subtext p {
+                font-size: 1.1rem;
+                line-height: 1.8rem;
+            }
+        }
+        .right-section .background .img img {
+            width: 400px;
+            height: 520px;
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    .inicio {
+        padding: 0 2rem;
+        flex-direction: column-reverse;
+        
+        .left-wrapper {
+            .text-section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .title {
+                    text-align: center;
+
+                    padding-top: 1rem;
+                    width: 100%;
+                    h1 {
+                        font-size: 4rem !important;
+                        line-height: 4.5rem !important;
+                    }
+                }
+                
+                .subtext {
+                    text-align: center;
+                    
+                    margin: 0 auto;
+                    p {
+                        font-size: 1.2rem;
+                        line-height: 1.8rem;
+                    }
+                }
+            }
+            .redirection {
+                display: flex;
+                justify-content: center;
+            }
+                
+        }
+        .right-section .background {
+                justify-content: center;
+                .img img {
+                    width: 400px;
+                    height: 490px;
+                }
+            }
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+    .inicio { 
+        .left-wrapper {
+            .text-section {
+                .title h1 {
+                    font-size: 3rem !important;
+                    line-height: 3.5rem !important;
+                }
+                .subtext {
+                    width: 80%;
+                    p {
+                        font-size: 1rem;
+                        line-height: 1.6rem;
+                    }
+                }
+            }
+                
+        }
+        .right-section .background {
+                .img img {
+                    width: 300px;
+                    height: 370px;
+                }
+            }
+    }
+}
+
+@media screen and (max-width:520px) {
+    .inicio { 
+        .left-wrapper .text-section {
+                .title h1 {
+                        font-size: 2.6rem !important;
+                        line-height: 3.3rem !important;
+                }
+                
+                .subtext {
+                    width: 85%;
+                    padding: 1rem 0;
+                    p {
+                        font-size: 1rem;
+                        line-height: 1.6rem;
+                    }
+                }
+        }
+        .right-section .background .img img {
+            width: 270px;
+            height: 330px;
+        }
+    }
+}
+
+@media screen and (max-width:460px) {
+    .inicio .left-wrapper .text-section .subtext {
+        width: 95%;
+    }
+}
