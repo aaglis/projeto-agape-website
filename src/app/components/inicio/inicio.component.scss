@@ -14,8 +14,9 @@
             .title {
                 width: max-content;
                 h1 {
-                    font-size: 4.5rem;
+                    font-size: 4.8rem;
                     line-height: 5.5rem;
+                    transition: .3s;
                     span {
                         color: $primary-color;
                     }
@@ -23,8 +24,10 @@
             }
             .subtext {
                 padding: 2rem 0;
-                width: 85%;
+                width: 80%;
+                transition: .3s;
                 p {
+                    font-family: 'Montserrat', Georgia, 'Times New Roman', Times, serif;
                     line-height: 1.8rem;
                     font-size: 1.25rem;
                 }
@@ -72,6 +75,7 @@
                 background: linear-gradient($secondary-color 50%, $white-color 50%);
                 img {
                     border-radius: 5px;
+                    transition: .3s;
                 }
             }
         }
@@ -99,11 +103,11 @@
     .inicio {
         .left-wrapper .text-section {
             .title h1 {
-                font-size: 4rem !important;
-                line-height: 4.5rem !important;
+                font-size: 4.3rem !important;
+                line-height: 4.8rem !important;
             }
             .subtext {
-                width: 80%;
+                width: 78%;
             }
         }
         .right-section .background .img img {
@@ -117,9 +121,9 @@
     .inicio {
         padding: 4rem 2rem;
         .left-wrapper {
-            .text-section .subtext {
-                width: 75%;
-            }
+            // .text-section .subtext {
+            //     width: 75%;
+            // }
             .redirection {
                 padding-top: 1rem;
             }
@@ -131,8 +135,8 @@
     .inicio {
         .left-wrapper .text-section {
             .title h1 {
-                font-size: 3.3rem !important;
-                line-height: 3.7rem !important;
+                font-size: 3.6rem !important;
+                line-height: 4.3rem !important;
             }
 
             .subtext p {
