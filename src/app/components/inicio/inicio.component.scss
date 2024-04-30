@@ -4,6 +4,7 @@
     display: flex;
     box-sizing: content-box;
     margin: 0 auto;
+    height: 75vh;
 
     max-width: 1350px;
     padding: 4rem 24px;
@@ -92,13 +93,11 @@
     transition: .5s;
 }
 
-@media screen and (max-width: 1620px) {
-    .container-inicio .right-section .background  {
-        justify-content: end;
-    }
-}
-
 @media screen and (max-width: 1500px) {
+    .container-inicio {
+        height:inherit;
+    }
+
     .container-inicio .left-wrapper,
     .container-inicio .right-section {
         width: auto;
@@ -125,9 +124,9 @@
     .container-inicio {
         padding: 4rem 2rem;
         .left-wrapper {
-            // .text-section .subtext {
-            //     width: 75%;
-            // }
+            .text-section .subtext {
+                width: 75%;
+            }
             .redirection {
                 padding-top: 1rem;
             }
