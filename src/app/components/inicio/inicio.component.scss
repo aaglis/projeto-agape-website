@@ -1,8 +1,12 @@
 @import '../../../variables.scss';
 
-.inicio {
+.container-inicio {
     display: flex;
-    padding: 4rem 7rem;
+    box-sizing: content-box;
+    margin: 0 auto;
+
+    max-width: 1350px;
+    padding: 4rem 24px;
     transition: .3s;
 
     .left-wrapper {
@@ -63,7 +67,7 @@
     .right-section {
         .background {
             display: flex;
-            justify-content: center;
+            justify-content: end;
 
             transition: .2s;
             .img {
@@ -82,25 +86,25 @@
     }
 }
 
-.inicio .left-wrapper,
-.inicio .right-section {
+.container-inicio .left-wrapper,
+.container-inicio .right-section {
     width: 50%;
     transition: .5s;
 }
 
 @media screen and (max-width: 1620px) {
-    .inicio .right-section .background  {
+    .container-inicio .right-section .background  {
         justify-content: end;
     }
 }
 
 @media screen and (max-width: 1500px) {
-    .inicio .left-wrapper,
-    .inicio .right-section {
+    .container-inicio .left-wrapper,
+    .container-inicio .right-section {
         width: auto;
     }
 
-    .inicio {
+    .container-inicio {
         .left-wrapper .text-section {
             .title h1 {
                 font-size: 4.3rem !important;
@@ -118,7 +122,7 @@
 }
 
 @media screen and (max-width: 1340px) {
-    .inicio {
+    .container-inicio {
         padding: 4rem 2rem;
         .left-wrapper {
             // .text-section .subtext {
@@ -132,7 +136,7 @@
 }
 
 @media screen and (max-width:1150px) {
-    .inicio {
+    .container-inicio {
         .left-wrapper .text-section {
             .title h1 {
                 font-size: 3.6rem !important;
@@ -152,7 +156,7 @@
 }
 
 @media screen and (max-width:992px) {
-    .inicio {
+    .container-inicio {
         padding: 0 2rem;
         flex-direction: column-reverse;
         
@@ -201,7 +205,7 @@
 }
 
 @media screen and (max-width: 680px) {
-    .inicio { 
+    .container-inicio { 
         .left-wrapper {
             .text-section {
                 .title h1 {
@@ -228,7 +232,7 @@
 }
 
 @media screen and (max-width:520px) {
-    .inicio { 
+    .container-inicio { 
         .left-wrapper .text-section {
                 .title h1 {
                         font-size: 2.6rem !important;
@@ -252,7 +256,7 @@
 }
 
 @media screen and (max-width:460px) {
-    .inicio .left-wrapper .text-section .subtext {
+    .container-inicio .left-wrapper .text-section .subtext {
         width: 95%;
     }
 }

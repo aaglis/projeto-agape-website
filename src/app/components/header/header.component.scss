@@ -32,13 +32,16 @@ a:hover {
     color: $primary-color;
 }
 
-header {
+.container-header {
     display: flex;
     position: relative;
     align-items: center;
     justify-content: space-between;
+    box-sizing: content-box;
+    margin: 0 auto;
 
-    padding: 1.8rem 7rem;
+    max-width: 1350px;
+    padding: 1.8rem 24px;
     transition: .1s;
 
     .logo {
@@ -115,7 +118,7 @@ header {
 }
 
 @media screen and (max-width: 1340px) {
-    header {
+    .container-header {
         padding-left: 2rem;
         padding-right: 2rem;
     }
@@ -135,7 +138,7 @@ header {
         display: block !important;
     }
 
-    header .dropdown-menu {
+    .container-header .dropdown-menu {
         display: block;
     }
 }
@@ -152,17 +155,17 @@ header {
 }
 
 @media screen and (max-width: 460px) {
-    header {
+    .container-header {
         padding-left: 1rem;
         padding-right: 1rem;
     }
 
-    header .logo img {
+    .container-header .logo img {
         width: 140px;
         height: 50px;
     }
 
-    header .dropdown-menu {
+    .container-header .dropdown-menu {
         display: flex;
         flex-direction: column;
 
