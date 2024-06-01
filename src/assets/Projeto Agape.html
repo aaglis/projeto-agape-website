@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <script type="module" src="Projeto%20Agape_arquivos/client.es"></script>
+
+  <meta charset="utf-8">
+  <title>Projeto Agape</title>
+  <!-- base href="http://localhost:4200/" -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="http://localhost:4200/assets/favicon.png">
+<link rel="stylesheet" href="Projeto%20Agape_arquivos/styles.css"><style ng-style-reused="">@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap";
+
+
+
+  app-redirect-button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 200px;
+  height: 60px;
+  background-color: #ff7a00 !important;
+  opacity: 0.8;
+  color: #fff !important;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+  app-redirect-button a:hover {
+  opacity: 1;
+}
+a[_ngcontent-ng-c1034575447] {
+  text-decoration: none;
+  color: #000;
+  transition: 0.2s;
+}
+a[_ngcontent-ng-c1034575447]:hover {
+  color: #ff7a00;
+}
+.container-header[_ngcontent-ng-c1034575447] {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: content-box;
+  margin: 0 auto;
+  max-width: 1350px;
+  padding: 1.8rem 24px;
+  transition: 0.1s;
+}
+.container-header[_ngcontent-ng-c1034575447]   .logo[_ngcontent-ng-c1034575447] {
+  display: flex;
+  align-items: center;
+}
+.container-header[_ngcontent-ng-c1034575447]   .logo[_ngcontent-ng-c1034575447]   img[_ngcontent-ng-c1034575447] {
+  transition: 0.2s;
+}
+.container-header[_ngcontent-ng-c1034575447]   .navigation-area[_ngcontent-ng-c1034575447] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 2.5rem;
+}
+.container-header[_ngcontent-ng-c1034575447]   .navigation-area[_ngcontent-ng-c1034575447]   nav[_ngcontent-ng-c1034575447] {
+  display: flex;
+  gap: 3rem;
+}
+.container-header[_ngcontent-ng-c1034575447]   .navigation-area[_ngcontent-ng-c1034575447]   .toggle-btn[_ngcontent-ng-c1034575447] {
+  display: none;
+  cursor: pointer;
+}
+.container-header[_ngcontent-ng-c1034575447]   .dropdown-menu[_ngcontent-ng-c1034575447] {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  top: 120px;
+  right: 2rem;
+  width: 300px;
+  height: 0;
+  background-color: #fff;
+  border-radius: 15px;
+  transition: height 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.container-header[_ngcontent-ng-c1034575447]   .dropdown-menu[_ngcontent-ng-c1034575447]   nav[_ngcontent-ng-c1034575447] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.container-header[_ngcontent-ng-c1034575447]   .dropdown-menu[_ngcontent-ng-c1034575447]   nav[_ngcontent-ng-c1034575447]   a[_ngcontent-ng-c1034575447] {
+  text-align: center;
+  width: 99%;
+  padding: 1.4rem;
+  border: 1px solid #fff;
+  transition: 0.2s;
+}
+.container-header[_ngcontent-ng-c1034575447]   .dropdown-menu[_ngcontent-ng-c1034575447]     app-redirect-button a {
+  width: 90%;
+  margin: 1.4rem auto 0 auto;
+}
+.container-header[_ngcontent-ng-c1034575447]   .dropdown-menu.open[_ngcontent-ng-c1034575447] {
+  height: 400px;
+  box-shadow: 0px 0px 50px 19px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 1340px) {
+  .container-header[_ngcontent-ng-c1034575447] {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .navigation-area[_ngcontent-ng-c1034575447]   a[_ngcontent-ng-c1034575447], .navigation-area[_ngcontent-ng-c1034575447]     app-redirect-button {
+    display: none;
+  }
+  .navigation-area[_ngcontent-ng-c1034575447]   .toggle-btn[_ngcontent-ng-c1034575447] {
+    display: block !important;
+  }
+  .container-header[_ngcontent-ng-c1034575447]   .dropdown-menu[_ngcontent-ng-c1034575447] {
+    display: block;
+  }
+}
+@keyframes _ngcontent-ng-c1034575447_slideMenu {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@media screen and (max-width: 460px) {
+  .container-header[_ngcontent-ng-c1034575447] {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .container-header[_ngcontent-ng-c1034575447]   .logo[_ngcontent-ng-c1034575447]   img[_ngcontent-ng-c1034575447] {
+    width: 140px;
+    height: 50px;
+  }
+  .container-header[_ngcontent-ng-c1034575447]   .dropdown-menu[_ngcontent-ng-c1034575447] {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    top: 100px;
+    left: 0;
+    right: 0;
+  }
+}
+/*# sourceMappingURL=header.component.css.map */</style><style ng-style-reused="">@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap";
+
+
+
+.container-inicio[_ngcontent-ng-c2428899988] {
+  display: flex;
+  box-sizing: content-box;
+  margin: 0 auto;
+  height: 75vh;
+  max-width: 1350px;
+  padding: 4rem 24px;
+  transition: 0.3s;
+}
+.container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .text-section[_ngcontent-ng-c2428899988]   .title[_ngcontent-ng-c2428899988] {
+  width: max-content;
+}
+.container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .text-section[_ngcontent-ng-c2428899988]   .title[_ngcontent-ng-c2428899988]   h1[_ngcontent-ng-c2428899988] {
+  font-size: 4.8rem;
+  line-height: 5.5rem;
+  transition: 0.3s;
+}
+.container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .text-section[_ngcontent-ng-c2428899988]   .title[_ngcontent-ng-c2428899988]   h1[_ngcontent-ng-c2428899988]   span[_ngcontent-ng-c2428899988] {
+  color: #ff7a00;
+}
+.container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .text-section[_ngcontent-ng-c2428899988]   .subtext[_ngcontent-ng-c2428899988] {
+  padding: 2rem 0;
+  width: 80%;
+  transition: 0.3s;
+}
+.container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .text-section[_ngcontent-ng-c2428899988]   .subtext[_ngcontent-ng-c2428899988]   p[_ngcontent-ng-c2428899988] {
+  font-family:
+    "Montserrat",
+    Georgia,
+    "Times New Roman",
+    Times,
+    serif;
+  line-height: 1.8rem;
+  font-size: 1.25rem;
+}
+.container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .redirection[_ngcontent-ng-c2428899988] {
+  width: 100%;
+  padding-top: 3rem;
+  transition: 0.3s;
+}
+.container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .redirection[_ngcontent-ng-c2428899988]     app-redirect-button a {
+  color: #edf2f4;
+  font-weight: bold;
+  text-decoration: none;
+  width: 250px;
+  height: 60px;
+  border-radius: 10px;
+  opacity: 0.9;
+  border: 2px solid #ff7a00;
+  background-color: #ff7a00;
+}
+.container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .redirection[_ngcontent-ng-c2428899988]     app-redirect-button a:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+  transform: scale(1.02);
+}
+.container-inicio[_ngcontent-ng-c2428899988]   .right-section[_ngcontent-ng-c2428899988]   .background[_ngcontent-ng-c2428899988] {
+  display: flex;
+  justify-content: end;
+  transition: 0.2s;
+}
+.container-inicio[_ngcontent-ng-c2428899988]   .right-section[_ngcontent-ng-c2428899988]   .background[_ngcontent-ng-c2428899988]   .img[_ngcontent-ng-c2428899988] {
+  display: flex;
+  text-align: center;
+  padding: 0.4rem;
+  border-radius: 5px;
+  background: linear-gradient(#ffc561 50%, #edf2f4 50%);
+}
+.container-inicio[_ngcontent-ng-c2428899988]   .right-section[_ngcontent-ng-c2428899988]   .background[_ngcontent-ng-c2428899988]   .img[_ngcontent-ng-c2428899988]   img[_ngcontent-ng-c2428899988] {
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988], .container-inicio[_ngcontent-ng-c2428899988]   .right-section[_ngcontent-ng-c2428899988] {
+  width: 50%;
+  transition: 0.5s;
+}
+@media screen and (max-width: 1500px) {
+  .container-inicio[_ngcontent-ng-c2428899988] {
+    height: inherit;
+  }
+  .container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988], .container-inicio[_ngcontent-ng-c2428899988]   .right-section[_ngcontent-ng-c2428899988] {
+    width: auto;
+  }
+  .container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .text-section[_ngcontent-ng-c2428899988]   .title[_ngcontent-ng-c2428899988]   h1[_ngcontent-ng-c2428899988] {
+    font-size: 4.3rem !important;
+    line-height: 4.8rem !important;
+  }
+  .container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .text-section[_ngcontent-ng-c2428899988]   .subtext[_ngcontent-ng-c2428899988] {
+    width: 78%;
+  }
+  .container-inicio[_ngcontent-ng-c2428899988]   .right-section[_ngcontent-ng-c2428899988]   .background[_ngcontent-ng-c2428899988]   .img[_ngcontent-ng-c2428899988]   img[_ngcontent-ng-c2428899988] {
+    width: 450px;
+    height: 580px;
+  }
+}
+@media screen and (max-width: 1340px) {
+  .container-inicio[_ngcontent-ng-c2428899988] {
+    padding: 4rem 2rem;
+  }
+  .container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .text-section[_ngcontent-ng-c2428899988]   .subtext[_ngcontent-ng-c2428899988] {
+    width: 75%;
+  }
+  .container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .redirection[_ngcontent-ng-c2428899988] {
+    padding-top: 1rem;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .text-section[_ngcontent-ng-c2428899988]   .title[_ngcontent-ng-c2428899988]   h1[_ngcontent-ng-c2428899988] {
+    font-size: 3.6rem !important;
+    line-height: 4.3rem !important;
+  }
+  .container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .text-section[_ngcontent-ng-c2428899988]   .subtext[_ngcontent-ng-c2428899988]   p[_ngcontent-ng-c2428899988] {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+  .container-inicio[_ngcontent-ng-c2428899988]   .right-section[_ngcontent-ng-c2428899988]   .background[_ngcontent-ng-c2428899988]   .img[_ngcontent-ng-c2428899988]   img[_ngcontent-ng-c2428899988] {
+    width: 400px;
+    height: 520px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container-inicio[_ngcontent-ng-c2428899988] {
+    padding: 0 2rem;
+    flex-direction: column-reverse;
+  }
+  .container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .text-section[_ngcontent-ng-c2428899988] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .text-section[_ngcontent-ng-c2428899988]   .title[_ngcontent-ng-c2428899988] {
+    text-align: center;
+    padding-top: 1rem;
+    width: 100%;
+  }
+  .container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .text-section[_ngcontent-ng-c2428899988]   .title[_ngcontent-ng-c2428899988]   h1[_ngcontent-ng-c2428899988] {
+    font-size: 4rem !important;
+    line-height: 4.5rem !important;
+  }
+  .container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .text-section[_ngcontent-ng-c2428899988]   .subtext[_ngcontent-ng-c2428899988] {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .text-section[_ngcontent-ng-c2428899988]   .subtext[_ngcontent-ng-c2428899988]   p[_ngcontent-ng-c2428899988] {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .redirection[_ngcontent-ng-c2428899988] {
+    display: flex;
+    justify-content: center;
+  }
+  .container-inicio[_ngcontent-ng-c2428899988]   .right-section[_ngcontent-ng-c2428899988]   .background[_ngcontent-ng-c2428899988] {
+    justify-content: center;
+  }
+  .container-inicio[_ngcontent-ng-c2428899988]   .right-section[_ngcontent-ng-c2428899988]   .background[_ngcontent-ng-c2428899988]   .img[_ngcontent-ng-c2428899988]   img[_ngcontent-ng-c2428899988] {
+    width: 400px;
+    height: 490px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .text-section[_ngcontent-ng-c2428899988]   .title[_ngcontent-ng-c2428899988]   h1[_ngcontent-ng-c2428899988] {
+    font-size: 3rem !important;
+    line-height: 3.5rem !important;
+  }
+  .container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .text-section[_ngcontent-ng-c2428899988]   .subtext[_ngcontent-ng-c2428899988] {
+    width: 80%;
+  }
+  .container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .text-section[_ngcontent-ng-c2428899988]   .subtext[_ngcontent-ng-c2428899988]   p[_ngcontent-ng-c2428899988] {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+  .container-inicio[_ngcontent-ng-c2428899988]   .right-section[_ngcontent-ng-c2428899988]   .background[_ngcontent-ng-c2428899988]   .img[_ngcontent-ng-c2428899988]   img[_ngcontent-ng-c2428899988] {
+    width: 300px;
+    height: 370px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .text-section[_ngcontent-ng-c2428899988]   .title[_ngcontent-ng-c2428899988]   h1[_ngcontent-ng-c2428899988] {
+    font-size: 2.6rem !important;
+    line-height: 3.3rem !important;
+  }
+  .container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .text-section[_ngcontent-ng-c2428899988]   .subtext[_ngcontent-ng-c2428899988] {
+    width: 85%;
+    padding: 1rem 0;
+  }
+  .container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .text-section[_ngcontent-ng-c2428899988]   .subtext[_ngcontent-ng-c2428899988]   p[_ngcontent-ng-c2428899988] {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+  .container-inicio[_ngcontent-ng-c2428899988]   .right-section[_ngcontent-ng-c2428899988]   .background[_ngcontent-ng-c2428899988]   .img[_ngcontent-ng-c2428899988]   img[_ngcontent-ng-c2428899988] {
+    width: 270px;
+    height: 330px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .container-inicio[_ngcontent-ng-c2428899988]   .left-wrapper[_ngcontent-ng-c2428899988]   .text-section[_ngcontent-ng-c2428899988]   .subtext[_ngcontent-ng-c2428899988] {
+    width: 95%;
+  }
+}
+/*# sourceMappingURL=inicio.component.css.map */</style><style ng-style-reused="">@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap";
+
+
+
+.container-sobre[_ngcontent-ng-c327280855] {
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 2rem 24px;
+  gap: 200px;
+}
+/*# sourceMappingURL=sobre.component.css.map */</style><style ng-style-reused="">
+
+a[_ngcontent-ng-c1942728129] {
+  background-color: blue;
+  color: black;
+}
+/*# sourceMappingURL=redirect-button.component.css.map */</style><style ng-style-reused="">@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap";
+
+
+
+.panel[_ngcontent-ng-c819889042] {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.panel[_ngcontent-ng-c819889042]   .text-wrapper[_ngcontent-ng-c819889042] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  padding-right: 2rem;
+}
+.panel[_ngcontent-ng-c819889042]   .text-wrapper[_ngcontent-ng-c819889042]   .title[_ngcontent-ng-c819889042]   .pre-title[_ngcontent-ng-c819889042] {
+  display: flex;
+  align-items: center;
+}
+.panel[_ngcontent-ng-c819889042]   .text-wrapper[_ngcontent-ng-c819889042]   .title[_ngcontent-ng-c819889042]   .pre-title[_ngcontent-ng-c819889042]   .line-style[_ngcontent-ng-c819889042] {
+  background-color: #ffc561;
+  width: 72px;
+  height: 2px;
+}
+.panel[_ngcontent-ng-c819889042]   .text-wrapper[_ngcontent-ng-c819889042]   .title[_ngcontent-ng-c819889042]   .pre-title[_ngcontent-ng-c819889042]   p[_ngcontent-ng-c819889042] {
+  font-family:
+    "Montserrat",
+    Georgia,
+    "Times New Roman",
+    Times,
+    serif;
+  text-transform: uppercase;
+  padding-left: 0.8rem;
+  color: #ffc561;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+.panel[_ngcontent-ng-c819889042]   .text-wrapper[_ngcontent-ng-c819889042]   .title[_ngcontent-ng-c819889042]   h2[_ngcontent-ng-c819889042] {
+  font-size: 3.5rem;
+  font-weight: 500;
+  padding: 18px 0;
+}
+.panel[_ngcontent-ng-c819889042]   .text-wrapper[_ngcontent-ng-c819889042]   .subtext[_ngcontent-ng-c819889042]   p[_ngcontent-ng-c819889042] {
+  font-family:
+    "Montserrat",
+    Georgia,
+    "Times New Roman",
+    Times,
+    serif;
+  line-height: 1.4rem;
+  font-weight: 500;
+}
+.panel[_ngcontent-ng-c819889042]   .image-side[_ngcontent-ng-c819889042] {
+  width: 55%;
+}
+.panel[_ngcontent-ng-c819889042]   .image-side[_ngcontent-ng-c819889042]   img[_ngcontent-ng-c819889042] {
+  width: 100%;
+}
+.panel.left[_ngcontent-ng-c819889042] {
+  flex-direction: row;
+}
+.panel.left[_ngcontent-ng-c819889042]   .text-wrapper[_ngcontent-ng-c819889042] {
+  padding-right: 0;
+  padding-left: 2rem;
+}
+@media screen and (max-width: 1350px) {
+  .panel[_ngcontent-ng-c819889042]   .text-wrapper[_ngcontent-ng-c819889042] {
+    width: 50%;
+  }
+  .panel[_ngcontent-ng-c819889042]   .image-side[_ngcontent-ng-c819889042] {
+    width: 540px;
+    height: 700px;
+  }
+  .panel[_ngcontent-ng-c819889042]   .image-side[_ngcontent-ng-c819889042]   img[_ngcontent-ng-c819889042] {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .panel[_ngcontent-ng-c819889042] {
+    align-items: center;
+  }
+  .panel.left[_ngcontent-ng-c819889042]   .text-wrapper[_ngcontent-ng-c819889042] {
+    padding: 0;
+    align-items: center;
+  }
+}
+/*# sourceMappingURL=highlight-panel.component.css.map */</style><link _ngcontent-ng-c1034575447="" as="image" href="Projeto%20Agape_arquivos/logo-principal.png" rel="preload" fetchpriority="high"><link _ngcontent-ng-c2428899988="" as="image" href="Projeto%20Agape_arquivos/criancas-projeto.jpeg" rel="preload" fetchpriority="high"></head>
+<body cz-shortcut-listen="true"><!--nghm-->
+  <app-root _nghost-ng-c582792440="" ng-version="17.3.6" ng-server-context="ssr"><app-header _ngcontent-ng-c582792440="" _nghost-ng-c1034575447=""><header _ngcontent-ng-c1034575447=""><div _ngcontent-ng-c1034575447="" class="container-header"><div _ngcontent-ng-c1034575447="" class="logo"><img _ngcontent-ng-c1034575447="" width="200" height="70" alt="" priority="" ng-reflect-width="200" ng-reflect-height="70" ng-reflect-priority="" ng-reflect-ng-src="../../../assets/logo-principal" loading="eager" fetchpriority="high" ng-img="true" src="Projeto%20Agape_arquivos/logo-principal.png"></div><aside _ngcontent-ng-c1034575447="" class="navigation-area"><nav _ngcontent-ng-c1034575447=""><a _ngcontent-ng-c1034575447="" href="#">Início</a><a _ngcontent-ng-c1034575447="" href="#">Sobre</a><a _ngcontent-ng-c1034575447="" href="#">Voluntários</a><a _ngcontent-ng-c1034575447="" href="#">Contato</a></nav><app-redirect-button _ngcontent-ng-c1034575447="" locale="#" text="Seja Amigo" class="button" _nghost-ng-c1942728129="" ng-reflect-locale="#" ng-reflect-text="Seja Amigo"><a _ngcontent-ng-c1942728129="" class="button" href="#">Seja Amigo</a></app-redirect-button><div _ngcontent-ng-c1034575447="" class="toggle-btn"><img _ngcontent-ng-c1034575447="" alt="" src="Projeto%20Agape_arquivos/menu-icon.svg"></div></aside><div _ngcontent-ng-c1034575447="" class="dropdown-menu"><nav _ngcontent-ng-c1034575447=""><a _ngcontent-ng-c1034575447="" href="#">Início</a><a _ngcontent-ng-c1034575447="" href="#">Sobre</a><a _ngcontent-ng-c1034575447="" href="#">Voluntários</a><a _ngcontent-ng-c1034575447="" href="#">Contato</a></nav><app-redirect-button _ngcontent-ng-c1034575447="" locale="#" text="Seja Amigo" class="button" _nghost-ng-c1942728129="" ng-reflect-locale="#" ng-reflect-text="Seja Amigo"><a _ngcontent-ng-c1942728129="" class="button" href="#">Seja Amigo</a></app-redirect-button></div></div></header></app-header><app-inicio _ngcontent-ng-c582792440="" _nghost-ng-c2428899988=""><section _ngcontent-ng-c2428899988="" class="inicio"><div _ngcontent-ng-c2428899988="" class="container-inicio"><div _ngcontent-ng-c2428899988="" class="left-wrapper"><div _ngcontent-ng-c2428899988="" class="text-section"><div _ngcontent-ng-c2428899988="" class="title"><h1 _ngcontent-ng-c2428899988="">Conheça o<br _ngcontent-ng-c2428899988="">Projeto <span _ngcontent-ng-c2428899988="">Ágape</span> !</h1></div><div _ngcontent-ng-c2428899988="" class="subtext"><p _ngcontent-ng-c2428899988="">
+ Uma iniciativa comprometida em levar para cada criança o amor de Deus, 
+através de momentos repletos de diversão e alegria, com o objeto de 
+impactá-los da melhor forma possivel. </p></div></div><div _ngcontent-ng-c2428899988="" class="redirection"><app-redirect-button _ngcontent-ng-c2428899988="" locale="#" text="Saiba Mais" _nghost-ng-c1942728129="" ng-reflect-locale="#" ng-reflect-text="Saiba Mais"><a _ngcontent-ng-c1942728129="" class="button" href="#">Saiba Mais</a></app-redirect-button></div></div><div _ngcontent-ng-c2428899988="" class="right-section"><div _ngcontent-ng-c2428899988="" class="background"><div _ngcontent-ng-c2428899988="" class="img"><img _ngcontent-ng-c2428899988="" width="500" height="620" priority="" ng-reflect-width="500" ng-reflect-height="620" ng-reflect-priority="" ng-reflect-ng-src="../../../assets/criancas-proje" loading="eager" fetchpriority="high" ng-img="true" src="Projeto%20Agape_arquivos/criancas-projeto.jpeg"></div></div></div></div></section></app-inicio><app-sobre _ngcontent-ng-c582792440="" _nghost-ng-c327280855=""><section _ngcontent-ng-c327280855="" class="sobre"><div _ngcontent-ng-c327280855="" class="container-sobre"><app-highlight-panel _ngcontent-ng-c327280855="" imageurl="../../../assets/banner-projeto.jpeg" pretitle="Nossa Origem" title="A Missão do Projeto Ágape" subtext="Iniciado em 2019 por jovens do bairro, o Projeto Ágape surgiu com o objetivo de resgatar jovens envolvidos com drogas. Direcionados por uma nova missão, passamos a trabalhar com crianças que frequentavam a praça, proporcionando-lhes amor, diversão e alegria. Nosso foco é impactar positivamente cada criança da comunidade, vendo nossa missão crescer a cada encontro." _nghost-ng-c819889042="" ng-reflect-image-url="../../../assets/banner-projeto" ng-reflect-pre-title="Nossa Origem" ng-reflect-title="A Missão do Projeto Ágape" ng-reflect-subtext="Iniciado em 2019 por jovens do"><section _ngcontent-ng-c819889042="" class="panel"><aside _ngcontent-ng-c819889042="" class="image-side"><img _ngcontent-ng-c819889042="" alt="" src="Projeto%20Agape_arquivos/banner-projeto.jpeg"></aside><aside _ngcontent-ng-c819889042="" class="text-wrapper"><div _ngcontent-ng-c819889042="" class="title"><div _ngcontent-ng-c819889042="" class="pre-title"><div _ngcontent-ng-c819889042="" class="line-style"></div><p _ngcontent-ng-c819889042="">Nossa Origem</p></div><h2 _ngcontent-ng-c819889042="">A Missão do Projeto Ágape</h2></div><div _ngcontent-ng-c819889042="" class="subtext"><p _ngcontent-ng-c819889042="">Iniciado
+ em 2019 por jovens do bairro, o Projeto Ágape surgiu com o objetivo de 
+resgatar jovens envolvidos com drogas. Direcionados por uma nova missão,
+ passamos a trabalhar com crianças que frequentavam a praça, 
+proporcionando-lhes amor, diversão e alegria. Nosso foco é impactar 
+positivamente cada criança da comunidade, vendo nossa missão crescer a 
+cada encontro.</p></div></aside></section></app-highlight-panel><app-highlight-panel _ngcontent-ng-c327280855="" imageposition="left" imageurl="../../../assets/impacto-dia-das-criancas.jpeg" pretitle="Do Coração da Comunidade" title="Nossa Jornada em Ação" subtext="Com o passar dos anos, o projeto cresceu e ganhou reconhecimento na comunidade. Além das atividades regulares, realizamos impactos ao longo do ano que são muito esperados por todos no bairro. Estes incluem o Especial de Páscoa, nosso evento de Natal e o grande Festival Comunitário realizado no Dia das Crianças." _nghost-ng-c819889042="" ng-reflect-image-position="left" ng-reflect-image-url="../../../assets/impacto-dia-da" ng-reflect-pre-title="Do Coração da Comunidade" ng-reflect-title="Nossa Jornada em Ação" ng-reflect-subtext="Com o passar dos anos, o proje"><section _ngcontent-ng-c819889042="" class="left panel"><aside _ngcontent-ng-c819889042="" class="image-side"><img _ngcontent-ng-c819889042="" alt="" src="Projeto%20Agape_arquivos/impacto-dia-das-criancas.jpeg"></aside><aside _ngcontent-ng-c819889042="" class="text-wrapper"><div _ngcontent-ng-c819889042="" class="title"><div _ngcontent-ng-c819889042="" class="pre-title"><div _ngcontent-ng-c819889042="" class="line-style"></div><p _ngcontent-ng-c819889042="">Do Coração da Comunidade</p></div><h2 _ngcontent-ng-c819889042="">Nossa Jornada em Ação</h2></div><div _ngcontent-ng-c819889042="" class="subtext"><p _ngcontent-ng-c819889042="">Com
+ o passar dos anos, o projeto cresceu e ganhou reconhecimento na 
+comunidade. Além das atividades regulares, realizamos impactos ao longo 
+do ano que são muito esperados por todos no bairro. Estes incluem o 
+Especial de Páscoa, nosso evento de Natal e o grande Festival 
+Comunitário realizado no Dia das Crianças.</p></div></aside></section></app-highlight-panel><app-highlight-panel _ngcontent-ng-c327280855="" imageurl="../../../assets/voluntarios-projeto.jpeg" pretitle="Olhando para o Futuro" title="Olhando para o Futuro" subtext="Atualmente, nosso propósito está se expandindo e nossa missão é abraçar ainda mais crianças em nossa comunidade por meio de trabalhos sociais e iniciativas que promovam seu bem-estar e desenvolvimento integral. Estamos comprometidos em ser uma luz de esperança e transformação na vida dessas crianças e suas famílias." _nghost-ng-c819889042="" ng-reflect-image-url="../../../assets/voluntarios-pr" ng-reflect-pre-title="Olhando para o Futuro" ng-reflect-title="Olhando para o Futuro" ng-reflect-subtext="Atualmente, nosso propósito es"><section _ngcontent-ng-c819889042="" class="panel"><aside _ngcontent-ng-c819889042="" class="image-side"><img _ngcontent-ng-c819889042="" alt="" src="Projeto%20Agape_arquivos/voluntarios-projeto.jpeg"></aside><aside _ngcontent-ng-c819889042="" class="text-wrapper"><div _ngcontent-ng-c819889042="" class="title"><div _ngcontent-ng-c819889042="" class="pre-title"><div _ngcontent-ng-c819889042="" class="line-style"></div><p _ngcontent-ng-c819889042="">Olhando para o Futuro</p></div><h2 _ngcontent-ng-c819889042="">Olhando para o Futuro</h2></div><div _ngcontent-ng-c819889042="" class="subtext"><p _ngcontent-ng-c819889042="">Atualmente,
+ nosso propósito está se expandindo e nossa missão é abraçar ainda mais 
+crianças em nossa comunidade por meio de trabalhos sociais e iniciativas
+ que promovam seu bem-estar e desenvolvimento integral. Estamos 
+comprometidos em ser uma luz de esperança e transformação na vida dessas
+ crianças e suas famílias.</p></div></aside></section></app-highlight-panel><img _ngcontent-ng-c327280855="" src="" alt=""></div></section></app-sobre></app-root>
+<script src="Projeto%20Agape_arquivos/polyfills.js" type="module"></script><script src="Projeto%20Agape_arquivos/main.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{}]}</script></body></html>

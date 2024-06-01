@@ -40,7 +40,7 @@ a:hover {
     box-sizing: content-box;
     margin: 0 auto;
 
-    max-width: 1350px;
+    max-width: 1440px;
     padding: 1.8rem 24px;
     transition: .1s;
 
@@ -64,6 +64,9 @@ a:hover {
         nav{
             display: flex;
             gap: 3rem;
+            a {
+                font-size: 1.2rem;
+            }
         }
         
         .toggle-btn {
@@ -90,41 +93,39 @@ a:hover {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
             width: 100%;
+            flex: 1;
             a {
                 text-align: center;
                 
                 width: 99%;
                 padding: 1.4rem;
                 border: 1px solid #fff;
-                transition: .2s;
+                transition: .4s;
             }
             
         }
         
-        ::ng-deep app-redirect-button a{
-            
-            width: 90%;
-            margin: 1.4rem auto 0 auto;
+        ::ng-deep app-redirect-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            flex: 1;
+        
+            a{
+                width: 90%;
+
+            }
         }
     }
     
     .dropdown-menu.open {
-        height: 400px;
+        height: 380px;
         box-shadow: 0px 0px 50px 19px rgba(0,0,0,0.2);
         // animation: slideMenu .3s ease-out;
     }
 }
-
-@media screen and (max-width: 1340px) {
-    .container-header {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-}
-
-
 
 @media screen and (max-width: 992px) {
     
@@ -139,7 +140,9 @@ a:hover {
     }
 
     .container-header .dropdown-menu {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
