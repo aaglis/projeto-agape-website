@@ -4,11 +4,12 @@ import { HeaderComponent } from './components/header/header.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { RedirectButtonComponent } from './shared/components/redirect-button/redirect-button.component';
 import { SobreComponent } from './components/sobre/sobre.component';
+import { ActivitiesComponent } from './components/activities/activities.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, InicioComponent, RedirectButtonComponent, SobreComponent],
+  imports: [RouterOutlet, HeaderComponent, InicioComponent, RedirectButtonComponent, SobreComponent, ActivitiesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

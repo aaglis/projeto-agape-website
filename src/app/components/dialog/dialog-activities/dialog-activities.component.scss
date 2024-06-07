@@ -1,0 +1,114 @@
+@import '../../../../variables.scss';
+@import '../../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+::ng-deep .dialog-container-activities {
+    position: fixed !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 900px !important;
+    z-index: 5;
+}
+  
+:host {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem 1.5rem;
+  transition: .3s;
+  header, h3, p, mat-dialog-content {
+    padding: 0;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    h2 {
+      padding: 0;
+      margin: 0;
+      font-size: 22px;
+      color: $black-color;
+    }
+
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      padding: 0;
+    }
+  }
+  mat-dialog-content {
+    h3 {
+      font-size: 18px;
+      color: lighten($black-color, 20%);
+    }
+    .text-area {
+      p {
+        font-size: 16px;
+        strong {
+          color: lighten($black-color, 20%);
+        }
+      }
+    }
+    nav {
+      display: flex;
+      .link {
+        text-decoration: none;
+        background-color: $primary-color;
+        color: #fff;
+        border-radius: 5px;
+        padding: 5px 10px;
+        font-weight: 500;
+        transition: .3s;
+      }
+      .link:hover {
+        background-color: darken($primary-color, 3%);
+      }
+    }
+  }
+
+
+  .carousel {
+    display: flex;
+    margin: 0 auto;
+  
+    padding: 1.5rem 0;
+    .images-wrapper {
+      max-height: 350px;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  ::ng-deep .dialog-container-activities {
+    max-width: none;
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  ::ng-deep .dialog-container-activities {
+    width: 100%;
+    padding: 0 15px;
+  }
+  :host {
+    padding: 1rem;  
+  }
+}
+
+@media screen and (max-width: 520px) {
+  :host mat-dialog-content {
+    nav .link{
+      padding: 3px 5px;
+      font-weight: 600;
+      font-size: .9rem;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  :host mat-dialog-content {
+    nav .link{
+      font-size: .8rem;
+    }
+  }
+}

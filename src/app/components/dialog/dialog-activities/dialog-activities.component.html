@@ -1,0 +1,39 @@
+<header>
+    <h2>{{getData()?.title}}</h2>
+    <button (click)="closeModal()">
+        <img src="assets/icons/dialog/close.svg" alt="Botão para fechar o dialog">
+    </button>
+</header>
+
+<div id="carouselExampleControls" class="carousel slide" #carousel>
+    <div class="carousel-inner images-wrapper">
+        <div 
+            *ngFor="let item of getData()?.imagesCarousel; let i = index"
+            class="carousel-item" 
+            [ngClass]="{'active': i === 0}"
+        >
+            <img class="d-block w-100" [src]="item" alt="Slide {{ i + 1 }}" loading="eager">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
+</div>
+
+<mat-dialog-content>
+    <h3>Descrição</h3>
+    <div class="text-area">
+        <p>{{getData()?.description?.text}}.</p>
+        <p><strong>data:</strong> {{getData()?.description?.operatingDay}}</p>
+    </div>
+    <nav>
+        <a [href]="getData()?.link?.href" target="_blank" class="link">
+            {{ getData()?.link?.name}}
+        </a>
+    </nav>
+</mat-dialog-content>
