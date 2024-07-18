@@ -1,0 +1,21 @@
+<div class="texts-wrapper">
+  <p class="intro-line">Faça Parte!</p>
+  <h2>Junte-se a Nossa Missão Como um <span>Voluntário</span> !</h2>
+
+
+  <div class="benefits">
+    @for(item of volunteerBenefits; track $index) {
+      <div class="benefit">
+        <img [src]="item.icon" alt="">
+        <h3>{{item.title}}</h3>
+        <p>{{item.description}}</p>
+      </div>
+    }
+    <button>Seja um Voluntário <lucide-icon name="move-up-right" [size]="18" [strokeWidth]="3"></lucide-icon></button>
+  </div>
+</div>
+<img src="../../../assets/icons/lines/arrow.svg" alt="" class="curve-line-arrow">
+
+<div class="container-img">
+  <img src="../../../assets/voluntarios/hero-image-idea-2.png" alt="">
+</div>
