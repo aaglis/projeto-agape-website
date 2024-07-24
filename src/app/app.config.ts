@@ -4,13 +4,13 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { LucideAngularModule, MoveUpRight, LoaderCircle, ChevronRight } from 'lucide-angular';
+import { LucideAngularModule, MoveUpRight, LoaderCircle, ChevronRight, Instagram } from 'lucide-angular';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
     provideClientHydration(),
     provideAnimationsAsync(),
-    importProvidersFrom(LucideAngularModule.pick({ MoveUpRight, LoaderCircle, ChevronRight }))
+    importProvidersFrom(LucideAngularModule.pick({ MoveUpRight, LoaderCircle, ChevronRight, Instagram }))
   ]
 };
