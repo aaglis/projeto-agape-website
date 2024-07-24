@@ -3,6 +3,9 @@
 :host {
   gap: 20px;
   height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem 24px;
 
   display: flex;
   flex-direction: column;
@@ -95,5 +98,17 @@
 
 .faq-item.ativo:hover {
   border-color: lighten($primary-color, 20%);
+}
+
+@media screen and (max-width: 1340px) {
+  .faq-item {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .faq-item {
+    max-width: 100%;
+  }
 }
 
