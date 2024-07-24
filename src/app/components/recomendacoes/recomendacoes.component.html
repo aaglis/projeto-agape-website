@@ -1,0 +1,34 @@
+<div class="container">
+  <h1><lucide-icon name="loader-circle" [size]="24" [strokeWidth]="3" color="#ffc561"></lucide-icon> Recomendações</h1>
+  <swiper-container
+    #SwiperComponent
+    class="swiper"
+    pagination="true"
+    pagination-clickable="true"
+    navigation="true"
+    space-between="20"
+    autoplay-delay="2500"
+    autoplay-disable-on-interaction="false"
+    slides-per-view="3"
+    [breakpoints]="breakpoints"
+  >
+    @for(item of listFeedbacks; track $index){
+      <swiper-slide>
+        <div class="card">
+          <div class="profile">
+            <div class="icon">
+              <img [src]="item.image" alt="">
+            </div>
+            <div class="infos">
+              <h2>{{item.name}}</h2>
+              <p>{{item.role}}</p>
+            </div>
+          </div>
+          <div class="feedback">
+            <p>{{item.feedback}}</p>
+          </div>
+        </div>
+      </swiper-slide>
+    }
+  </swiper-container>
+</div>

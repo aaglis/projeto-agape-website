@@ -6,6 +6,8 @@ import { RedirectButtonComponent } from './shared/components/redirect-button/red
 import { SobreComponent } from './components/sobre/sobre.component';
 import { ActivitiesComponent } from './components/activities/activities.component';
 import { VoluntarioComponent } from './components/voluntario/voluntario.component';
+import { RecomendacoesComponent } from './components/recomendacoes/recomendacoes.component';
+import { PerguntasFrequentesComponent } from './components/perguntas-frequentes/perguntas-frequentes.component';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +19,9 @@ import { VoluntarioComponent } from './components/voluntario/voluntario.componen
     RedirectButtonComponent,
     SobreComponent,
     ActivitiesComponent,
-    VoluntarioComponent
+    VoluntarioComponent,
+    RecomendacoesComponent,
+    PerguntasFrequentesComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

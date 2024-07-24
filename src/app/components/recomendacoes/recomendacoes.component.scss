@@ -1,0 +1,105 @@
+@import '../../../variables.scss';
+:host {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+  max-width: 1440px;
+  padding: 2rem 24px;
+  .container {
+    max-width: 1300px;
+    transition: .3s;
+    h1 {
+        text-align: center;
+
+    }
+
+    swiper-container {
+      margin: 2rem 0;
+      height: 350px;
+      swiper-slide {
+        border-radius: 30px;
+        background-color: #fffef9;
+        border: 2px solid #ffd1c3;
+        padding: 32px;
+        height: 300px;
+        .profile {
+          display: flex;
+          gap: 20px;
+          .icon img {
+              width: 70px;
+              height: 70px;
+              border-radius: 50%;
+              border: 2px solid #fff;
+              box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.1);
+          }
+          .infos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            p {
+              padding-top: 5px;
+              font-family: 'Montserrat', sans-serif;
+            }
+          }
+        }
+
+        .feedback {
+          padding-top: 40px;
+          p {
+            font-family: 'Montserrat', sans-serif;
+            color: #606179;
+          }
+        }
+      }
+    }
+    swiper-container::part(bullet) {
+      background-color: ligthen($primary-color, 50%);
+
+    }
+    swiper-container::part(bullet-active) {
+      background-color: $primary-color;
+    }
+    swiper-container::part(button-prev),
+    swiper-container::part(button-next) {
+      color: $primary-color;
+    }
+  }
+}
+
+@media screen and (min-width:1341px) {
+  .container {
+    width: 1300px;
+  }
+
+}
+
+@media screen and (max-width: 1340px) {
+  .container {
+    width: 1024px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    width: 95%;
+  }
+}
