@@ -1,5 +1,4 @@
 @import '../../../variables.scss';
-
 :host {
   display: block;
   background-color: lighten($primary-color, 20%);
@@ -11,7 +10,7 @@
     flex-direction: column;
     .contact-container {
       width: 100%;
-      padding: 3rem 0;
+      padding: 2rem 0;
       display: flex;
       gap: 150px;
 
