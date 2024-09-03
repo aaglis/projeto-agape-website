@@ -1,39 +1,18 @@
 <div class="container">
   <div class="contact-container">
-    <div class="left-wrapper">
-      <div class="container-logo">
-        <img src="../../../assets/logo-principal.png" alt="">
-      </div>
-      <div class="links">
-        <h2>Links</h2>
-        <a routerLink="/inicio">Inicio</a>
-        <a routerLink="/sobre">Sobre</a>
-        <a routerLink="/projetos">Projetos</a>
-        <a routerLink="/doacoes">Doações</a>
-        <a routerLink="/contato">Contato</a>
-      </div>
-      <div class="address">
-        <h2>Endereço</h2>
-        <p>Rua dos Bobos, nº 0</p>
-        <p>Bairro: Aldeota</p>
-        <p>Fortaleza - CE</p>
-        <p>CEP: 60000-000</p>
-      </div>
-    </div>
-
-    <div class="right-wrapper">
       <div class="contact">
-        <h2>Contato</h2>
-        <p>Entre em contato conosco para mais informações sobre o Projeto Ágape.</p>
+        <div class="title">
+          <h1>Entre em contato conosco!</h1>
+          <p>Saiba mais informações sobre o Projeto Ágape.</p>
+        </div>
         <form (submit)="onSubmit($event)">
           <input type="email" placeholder="E-mail" id="email" required>
           <textarea placeholder="Mensagem" id="message" required></textarea>
           <button #buttonSubmit type="submit">Enviar</button>
         </form>
       </div>
-    </div>
   </div>
-  <footer>
+  <!-- <footer>
     <div class="copyright">
       <p>© 2024 Projeto Ágape. Todos os direitos reservados.</p>
       <p>Desenvolvido por <a href="">Aglis</a></p>
@@ -41,5 +20,5 @@
     <div class="socials">
       <a href=""><lucide-icon name="instagram" strokeWidth="2"></lucide-icon></a>
     </div>
-  </footer>
+  </footer> -->
 </div>
