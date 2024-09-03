@@ -4,11 +4,10 @@
   background-color: lighten($primary-color, 20%);
   .container {
     max-width: 1440px;
-    padding: 0 24px;
+    padding: 3rem 24px;
     margin: 0 auto;
     .contact-container {
       width: 100%;
-      padding: 2rem 0;
       display: flex;
       gap: 150px;
         .contact {
@@ -17,6 +16,13 @@
           .title {
             text-align: center;
             color: #fff;
+            h1 {
+              font-size: 3rem;
+            }
+            p {
+              font-size: 1.3rem;
+              padding: 5px 0;
+            }
           }
           p {
             margin-bottom: 15px;
@@ -25,6 +31,11 @@
           form {
             display: flex;
             flex-direction: column;
+
+            input[type="text"],
+            input[type="email"] {
+              height: 50px;
+            }
 
             input[type="text"],
             input[type="email"],
@@ -44,7 +55,7 @@
             textarea {
               resize: none;
               font-size: .8rem;
-              height: 60px;
+              height: 70px;
             }
 
             button {
@@ -68,4 +79,29 @@
 
 p, a {
   font-family: 'Montserrat', sans-serif;
+}
+
+
+@media screen and (max-width: 768px) {
+  :host {
+    .container {
+      .contact-container {
+        .contact {
+          .title {
+            h1 {
+              font-size: 2.3rem;
+            }
+            p {
+              font-size: 1.1rem;
+            }
+          }
+          form {
+            input[type="email"] {
+              height: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

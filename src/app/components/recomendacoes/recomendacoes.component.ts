@@ -48,6 +48,7 @@ export class RecomendacoesComponent{
     1400: { slidesPerView: 3 },
     1000: { slidesPerView: 2 },
     600: { slidesPerView: 1 },
-    400: { slidesPerView: 1 }
+    400: { slidesPerView: 1 },
+    200: { slidesPerView: 1 }
   };
 }

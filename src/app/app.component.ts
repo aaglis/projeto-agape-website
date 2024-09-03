@@ -9,6 +9,7 @@ import { VoluntarioComponent } from './components/voluntario/voluntario.componen
 import { RecomendacoesComponent } from './components/recomendacoes/recomendacoes.component';
 import { PerguntasFrequentesComponent } from './components/perguntas-frequentes/perguntas-frequentes.component';
 import { ContatoComponent } from './components/contato/contato.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -23,7 +24,8 @@ import { ContatoComponent } from './components/contato/contato.component';
     VoluntarioComponent,
     RecomendacoesComponent,
     PerguntasFrequentesComponent,
-    ContatoComponent
+    ContatoComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
