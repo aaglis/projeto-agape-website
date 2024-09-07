@@ -1,14 +1,13 @@
 <div class="container">
     <div class="container-activities">
         <h2>Nossas Atividades</h2>
-    
+
         <div class="container-cards">
             @for(item of arrayActivities(); track item) {
                 <div class="card">
-                    <img 
-                        [src]="item.srcMain" 
+                    <img
+                        [src]="item.srcMain"
                         [alt]="item.alt"
-                        loading="lazy"
                     >
                     <p>{{item.title}}</p>
                     <button (click)="openDialog(item)">Saiba Mais</button>

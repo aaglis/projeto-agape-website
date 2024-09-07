@@ -5,3 +5,23 @@
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
 }
+
+.no-scroll-no-click {
+  overflow: hidden !important;
+  pointer-events: none !important;
+  position: relative;
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 4;
+  }
+}
+
+.no-scroll-no-click .mat-dialog-container {
+  pointer-events: all !important;
+}

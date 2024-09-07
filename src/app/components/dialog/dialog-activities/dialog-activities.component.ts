@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, Inject, OnInit, signal, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, Inject, OnInit, signal, ViewEncapsulation } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { IActivities } from '../../../interface/IActivities.interface';
 import { CommonModule } from '@angular/common';
@@ -11,32 +11,25 @@ import { CommonModule } from '@angular/common';
     styleUrl: './dialog-activities.component.scss',
     encapsulation: ViewEncapsulation.Emulated
 })
-export class DialogActivitiesComponent implements OnInit, AfterViewInit {
+export class DialogActivitiesComponent implements OnInit {
     constructor(
         private _dialogref: MatDialogRef<DialogActivitiesComponent>,
         @Inject(MAT_DIALOG_DATA) private _data: IActivities
-    ){}
+    ){
+      this.getData.set(this._data)
+      document.body.classList.add('no-scroll-no-click');
+      console.log('Classe "no-scroll" adicionada ao body:', document.body.classList.contains('no-scroll-no-click'));
+    }
 
     public getData = signal<IActivities | null>(null)
 
     ngOnInit(): void {
-        this.getData.set(this._data)
+
     }
 
     public closeModal() {
-        return this._dialogref.close()
-    }
-
-    @ViewChild('carousel') carousel!: ElementRef;
-
-    async ngAfterViewInit(): Promise<void> {
-        if (typeof window !== 'undefined') {
-            const { Carousel } = await import('bootstrap');
-            const carouselElement = this.carousel.nativeElement;
-            new Carousel(carouselElement, {
-                interval: 4000,
-                ride: 'carousel'
-            });
-        }
+      document.body.classList.remove('no-scroll-no-click');
+      console.log('Classe "no-scroll" removida do body:', document.body.classList.contains('no-scroll-no-click'));
+      return this._dialogref.close()
     }
 }

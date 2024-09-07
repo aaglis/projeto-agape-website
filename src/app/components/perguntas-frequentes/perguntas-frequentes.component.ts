@@ -12,23 +12,23 @@ import { LucideAngularModule } from 'lucide-angular';
 export class PerguntasFrequentesComponent implements AfterViewInit {
   faqList = [
     {
-      question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt aliquam. Nullam nec purus nec nunc tincidunt aliquam.',
+      question: 'Que dia acontece as programações?',
+      answer: 'Toda segunda-feira à partir das 19:30',
       activated: true
     },
     {
-      question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt aliquam. Nullam nec purus nec nunc tincidunt aliquam.',
+      question: 'Com qual idade pode participar do Projeto?',
+      answer: 'Temos crianças de todas a idades atingindo até a adolescência.',
       activated: false
     },
     {
-      question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt aliquam. Nullam nec purus nec nunc tincidunt aliquam.',
+      question: 'Como é feito o controle das crianças?',
+      answer: 'Fazemos um breve cadastro durante a programação com os dados básicos da criança e do responsável, para garantir a segurança de todos.',
       activated: false
     },
     {
-      question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt aliquam. Nullam nec purus nec nunc tincidunt aliquam.',
+      question: 'Como faço para obter informações sobre as programações?',
+      answer: 'Acompanhando o nosso Instagram e participando do grupo de responsáveis no WhatsApp logo após o cadastro da criança.',
       activated: false
     }
   ]
