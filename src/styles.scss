@@ -1,10 +1,32 @@
 @import './variables.scss';
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  scroll-behavior: smooth;
+
+  body {
+    &::-webkit-scrollbar {
+      width: 7px ;
+      height: 5px ; /* Se você precisar personalizar o scroll horizontal */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: lighten(#FF7A00, 10%); /* Cor do thumb */
+      border-radius: 10px ; /* Arredondamento do thumb */
+    }
+
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: lighten(#FF7A00, 12%); /* Cor ao passar o mouse */
+    }
+  }
 }
+
 
 .no-scroll-no-click {
   overflow: hidden !important;
